@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+      "declaration": true,            // 生成 .d.ts 文件
+      "declarationMap": true,
       "target": "ES2020",
       "module": "commonjs",
       "outDir": "./dist",
