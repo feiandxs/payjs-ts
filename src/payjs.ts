@@ -1,5 +1,5 @@
-import crypto from 'crypto';
-import { 
+import CryptoJS from 'crypto-js';
+import {
   PayJSNativeRequest, 
   PayJSNativeResponse,
   PayJSMicropayRequest,
@@ -59,10 +59,8 @@ class PayJS {
       .join('&') + `&key=${this.key}`;
 
     // MD5 加密并转大写
-    return crypto.createHash('md5')
-      .update(signStr)
-      .digest('hex')
-      .toUpperCase();
+    return CryptoJS.MD5(signStr).toString(CryptoJS.enc.Hex).toUpperCase();
+
   }
 
   /**

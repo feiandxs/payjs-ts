@@ -1,6 +1,6 @@
 {
   "name": "payjs-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The TypeScript SDK for PayJS payment service",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -47,14 +47,17 @@
   },
   "homepage": "https://github.com/feiandxs/payjs-ts#readme",
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^22.8.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   },
   "dependencies": {
+    "crypto-js": "^4.2.0",
     "dotenv": "^16.4.5"
   },
   "engines": {
     "node": ">=14.0.0"
-  }
+  },
+  "packageManager": "pnpm@9.1.1+sha1.09ada6cd05003e0ced25fb716f9fda4063ec2e3b"
 }
