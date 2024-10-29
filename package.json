@@ -1,0 +1,60 @@
+{
+  "name": "payjs-ts",
+  "version": "1.0.0",
+  "description": "The TypeScript SDK for PayJS payment service",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepare": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "payjs",
+    "payment",
+    "typescript",
+    "wechat",
+    "微信支付"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feiandxs/payjs-ts.git"
+  },
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feiandxs/payjs-ts/issues"
+  },
+  "homepage": "https://github.com/feiandxs/payjs-ts#readme",
+  "devDependencies": {
+    "@types/node": "^22.8.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
